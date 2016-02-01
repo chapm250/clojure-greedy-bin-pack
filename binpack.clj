@@ -32,19 +32,34 @@
 ;; (defn bin_pack [x]
 ;;   (print  ((first x) :value)))
 
+(def knapPI_13_200_1000_5 {:capacity 3172 :items '({:value 510N, :weight 310N} {:value 255N, :weight 155N} {:value 927N, :weight 747N} {:value 927N, :weight 747N} {:value 515N, :weight 415N} {:value 408N, :weight 248N} {:value 927N, :weight 747N} {:value 618N, :weight 498N} {:value 102N, :weight 62N} {:value 408N, :weight 248N} {:value 408N, :weight 248N} {:value 459N, :weight 279N} {:value 927N, :weight 747N} {:value 309N, :weight 249N} {:value 306N, :weight 186N} {:value 1030N, :weight 830N} {:value 204N, :weight 124N} {:value 515N, :weight 415N} {:value 206N, :weight 166N} {:value 309N, :weight 249N} {:value 412N, :weight 332N} {:value 309N, :weight 249N} {:value 103N, :weight 83N} {:value 412N, :weight 332N} {:value 357N, :weight 217N} {:value 412N, :weight 332N} {:value 1030N, :weight 830N} {:value 618N, :weight 498N} {:value 309N, :weight 249N} {:value 412N, :weight 332N} {:value 618N, :weight 498N} {:value 255N, :weight 155N} {:value 51N, :weight 31N} {:value 306N, :weight 186N} {:value 357N, :weight 217N} {:value 408N, :weight 248N} {:value 618N, :weight 498N} {:value 204N, :weight 124N} {:value 204N, :weight 124N} {:value 306N, :weight 186N} {:value 618N, :weight 498N} {:value 412N, :weight 332N} {:value 102N, :weight 62N} {:value 618N, :weight 498N} {:value 255N, :weight 155N} {:value 927N, :weight 747N} {:value 309N, :weight 249N} {:value 412N, :weight 332N} {:value 721N, :weight 581N} {:value 102N, :weight 62N} {:value 206N, :weight 166N} {:value 510N, :weight 310N} {:value 721N, :weight 581N} {:value 459N, :weight 279N} {:value 721N, :weight 581N} {:value 309N, :weight 249N} {:value 618N, :weight 498N} {:value 618N, :weight 498N} {:value 206N, :weight 166N} {:value 204N, :weight 124N} {:value 255N, :weight 155N} {:value 357N, :weight 217N} {:value 824N, :weight 664N} {:value 515N, :weight 415N} {:value 102N, :weight 62N} {:value 204N, :weight 124N} {:value 102N, :weight 62N} {:value 102N, :weight 62N} {:value 927N, :weight 747N} {:value 1030N, :weight 830N} {:value 510N, :weight 310N} {:value 408N, :weight 248N} {:value 408N, :weight 248N} {:value 459N, :weight 279N} {:value 721N, :weight 581N} {:value 51N, :weight 31N} {:value 515N, :weight 415N} {:value 721N, :weight 581N} {:value 408N, :weight 248N} {:value 309N, :weight 249N} {:value 206N, :weight 166N} {:value 206N, :weight 166N} {:value 357N, :weight 217N} {:value 357N, :weight 217N} {:value 408N, :weight 248N} {:value 459N, :weight 279N} {:value 824N, :weight 664N} {:value 204N, :weight 124N} {:value 204N, :weight 124N} {:value 824N, :weight 664N} {:value 204N, :weight 124N} {:value 103N, :weight 83N} {:value 309N, :weight 249N} {:value 204N, :weight 124N} {:value 515N, :weight 415N} {:value 357N, :weight 217N} {:value 306N, :weight 186N} {:value 721N, :weight 581N} {:value 408N, :weight 248N} {:value 357N, :weight 217N} {:value 1030N, :weight 830N} {:value 412N, :weight 332N} {:value 408N, :weight 248N} {:value 206N, :weight 166N} {:value 515N, :weight 415N} {:value 927N, :weight 747N} {:value 408N, :weight 248N} {:value 408N, :weight 248N} {:value 309N, :weight 249N} {:value 618N, :weight 498N} {:value 721N, :weight 581N} {:value 459N, :weight 279N} {:value 255N, :weight 155N} {:value 255N, :weight 155N} {:value 1030N, :weight 830N} {:value 206N, :weight 166N} {:value 306N, :weight 186N} {:value 357N, :weight 217N} {:value 618N, :weight 498N} {:value 515N, :weight 415N} {:value 459N, :weight 279N} {:value 824N, :weight 664N} {:value 927N, :weight 747N} {:value 206N, :weight 166N} {:value 618N, :weight 498N} {:value 309N, :weight 249N} {:value 204N, :weight 124N} {:value 412N, :weight 332N} {:value 824N, :weight 664N} {:value 515N, :weight 415N} {:value 824N, :weight 664N} {:value 102N, :weight 62N} {:value 102N, :weight 62N} {:value 206N, :weight 166N} {:value 408N, :weight 248N} {:value 510N, :weight 310N} {:value 306N, :weight 186N} {:value 309N, :weight 249N} {:value 618N, :weight 498N} {:value 618N, :weight 498N} {:value 255N, :weight 155N} {:value 206N, :weight 166N} {:value 103N, :weight 83N} {:value 618N, :weight 498N} {:value 515N, :weight 415N} {:value 824N, :weight 664N} {:value 255N, :weight 155N} {:value 103N, :weight 83N} {:value 824N, :weight 664N} {:value 515N, :weight 415N} {:value 206N, :weight 166N} {:value 357N, :weight 217N} {:value 618N, :weight 498N} {:value 412N, :weight 332N} {:value 102N, :weight 62N} {:value 309N, :weight 249N} {:value 824N, :weight 664N} {:value 255N, :weight 155N} {:value 153N, :weight 93N} {:value 103N, :weight 83N} {:value 515N, :weight 415N} {:value 51N, :weight 31N} {:value 459N, :weight 279N} {:value 255N, :weight 155N} {:value 459N, :weight 279N} {:value 206N, :weight 166N} {:value 102N, :weight 62N} {:value 102N, :weight 62N} {:value 412N, :weight 332N} {:value 1030N, :weight 830N} {:value 459N, :weight 279N} {:value 459N, :weight 279N} {:value 412N, :weight 332N} {:value 357N, :weight 217N} {:value 357N, :weight 217N} {:value 51N, :weight 31N} {:value 102N, :weight 62N} {:value 51N, :weight 31N} {:value 515N, :weight 415N} {:value 721N, :weight 581N} {:value 824N, :weight 664N} {:value 102N, :weight 62N} {:value 51N, :weight 31N} {:value 510N, :weight 310N} {:value 306N, :weight 186N} {:value 510N, :weight 310N} {:value 51N, :weight 31N} {:value 721N, :weight 581N} {:value 51N, :weight 31N} {:value 204N, :weight 124N} {:value 306N, :weight 186N} {:value 1030N, :weight 830N} {:value 306N, :weight 186N} {:value 927N, :weight 747N} {:value 721N, :weight 581N} {:value 618N, :weight 498N} {:value 204N, :weight 124N} {:value 408N, :weight 248N} {:value 103N, :weight 83N} {:value 824N, :weight 664N})})
+
+
 (defn divide [x]
   (assoc {} :ratio (/ (x :value) (x :weight)) :value (x :value) :weight (x :weight)))
 
 (defn divideAll [x]
-  (reverse (sort-by :ratio (map  divide (practice :items)))))
+  (reverse (sort-by :ratio (map  divide (knapPI_13_200_1000_5 :items)))))
 
-(defn addStuffUp [sortedRatio]
-;;   (apply merge-with + sortedRatio))
+(defn sums-of-values [c]
+  (reductions + c))
+
+(defn with-accum [c]
+  (map #(assoc %1 :accum %2)
+       c
+       (sums-of-values (map :weight c))))
+
+(defn theBest [capacity items]
+  (take-while (comp (partial >= capacity)
+                  :accum)
+            (with-accum items)))
 
 
-  (addStuffUp (divideAll :items))
+(defn add_totals [finished]
+  (apply merge-with + finished))
 
-;; (print (divideAll practice))
+
+ (print (add_totals (theBest (knapPI_13_200_1000_5 :capacity) (divideAll (knapPI_13_200_1000_5 :items)))))
 
 
 
